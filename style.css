@@ -1,0 +1,1104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /* font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+    "ＭＳ 明朝", serif; */
+  font-family: serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  font-family: serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  border-radius: 0;
+}
+
+/* utility */
+.head-main {
+  font-size: 35px;
+  color: #1f2f54;
+  font-weight: bold;
+}
+
+.head-sub {
+  font-size: 20px;
+  color: #1f2f54;
+}
+
+.forPc {
+  display: block;
+}
+
+.forSp {
+  display: none;
+}
+
+/* TOP */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 60px;
+  max-width: 1100px;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+header img {
+  width: 150px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+}
+
+header ul li {
+  margin-right: 25px;
+}
+
+header ul li a {
+  color: #333;
+}
+
+header ul li:last-of-type {
+  margin-right: 0;
+}
+
+header .dropdown {
+  display: none;
+}
+
+header ul li:nth-of-type(2) {
+  /* background-color: orange; */
+  position: relative;
+}
+
+header ul li:nth-of-type(2):hover .dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  background: #fff;
+  width: 190px;
+  z-index: 10;
+  padding: 20px 12px;
+}
+
+header ul li:nth-of-type(2):hover .dropdown a {
+  color: #333;
+  padding-bottom: 10px;
+}
+
+header ul li:nth-of-type(2):hover .dropdown a:last-of-type {
+  padding-bottom: 0;
+}
+
+header #navBtn {
+  display: none;
+}
+
+#hero {
+  width: 100%;
+  /* max-width: 100%; */
+  height: 550px;
+  position: relative;
+}
+
+/* #hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+} */
+
+#hero img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+#hero .hero-txt {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  /* height: 100%; */
+  transform: translate(-50%, -50%);
+}
+
+#hero .hero-txt h3 {
+  font-size: 55px;
+  text-shadow: 10px 10px 10px #000;
+  padding-bottom: 20px;
+}
+
+#hero .hero-txt button {
+  width: 250px;
+  height: 40px;
+  margin-top: 30px;
+  background: #1f2f54;
+  cursor: pointer;
+  /* border: 1px solid #1f2f54; */
+  transition: all 0.2s;
+}
+
+#hero .hero-txt button a {
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.2s;
+}
+
+#hero .hero-txt button:hover {
+  background: #fff;
+}
+
+#hero .hero-txt button:hover a {
+  color: #1f2f54;
+}
+
+#strength {
+  width: 70%;
+  /* background-color: lightblue; */
+  text-align: center;
+  margin: 60px auto 80px;
+}
+
+#strength p {
+}
+
+#strength h3 {
+  font-size: 33px;
+  padding-bottom: 30px;
+}
+
+#services {
+  width: 100%;
+  margin-top: 30px;
+}
+
+#services .service {
+  display: flex;
+  width: 100%;
+}
+
+#services .service img {
+  width: 50%;
+  height: 420px;
+  object-fit: cover;
+}
+
+#services .service .service-txt {
+  width: 37%;
+  margin: 0 auto;
+  /* background: lightblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#services .service .service-txt h3 {
+  font-size: 35px;
+  color: #1f2f54;
+  font-weight: bold;
+}
+
+#services .service .service-txt .border {
+  width: 100px;
+  height: 5px;
+  background: #1f2f54;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+#services .service .service-txt button {
+  width: 150px;
+  background: #1f2f54;
+  height: 35px;
+  margin: 30px 0 0 auto;
+}
+
+#services .service .service-txt button a {
+  color: #fff;
+}
+
+#blog {
+  width: 100%;
+  height: auto;
+  padding: 55px 0 85px;
+  background-color: #f2f2f2;
+}
+
+#blog .blog-head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#blog .blog-container {
+  width: 1000px;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#blog .card {
+  width: 300px;
+  border: 1px solid #999;
+}
+
+#blog .card img {
+  width: 100%;
+}
+
+#contactBottom {
+  width: 100%;
+  max-width: 100%;
+  height: 350px;
+  position: relative;
+}
+
+#contactBottom::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#contactBottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#contactBottom .contact-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#contactBottom .contact-txt h3 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+#contactBottom .contact-txt p:last-of-type {
+  padding-bottom: 20px;
+}
+
+#contactBottom .contact-txt button {
+  width: 300px;
+  height: 38px;
+}
+
+#contactBottom .contact-txt a {
+  color: #000;
+  letter-spacing: 0.4em;
+}
+
+/* footer section */
+footer {
+  background-color: #1f2f54;
+  color: #fff;
+}
+
+.footerContainer {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.footerContainer .item {
+  width: 25%;
+  line-height: 2;
+  font-size: 14px;
+}
+
+.footerContainer .item:first-of-type {
+  width: 45%;
+}
+
+.footerContainer .item:first-of-type p:first-of-type {
+  font-size: 30px;
+}
+
+.footerContainer .item li a {
+  color: #fff;
+}
+
+.footer-txt {
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+/* footer section */
+/* TOP */
+
+/* ------- 会社概要ここから ------ */
+#aboutHero {
+  width: 100%;
+  /* max-width: 100%; */
+  height: 320px;
+  position: relative;
+}
+
+#aboutHero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#aboutHero img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+#aboutHero .hero-txt {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  /* height: 100%; */
+  transform: translate(-50%, -50%);
+}
+
+#aboutHero .hero-txt h3 {
+  font-size: 47px;
+}
+
+#strength.aboutStrength {
+  margin-bottom: 30px;
+}
+
+.companyDetail {
+  width: 800px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.companyDetail .row {
+  width: 100%;
+  border-bottom: 1px solid #999;
+  display: flex;
+  padding: 8px 15px;
+  margin-top: 20px;
+}
+
+.companyDetail .row .detailHl {
+  width: 200px;
+  font-weight: bold;
+}
+
+.companyDetail .row .detailInfo {
+  width: 600px;
+}
+
+#divider {
+  width: 100%;
+  height: 350px;
+}
+
+#divider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#message {
+  width: 800px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 0 100px;
+}
+
+#message p.head-sub,
+#message h3.head-main {
+  text-align: center;
+}
+
+.messageContainer {
+  margin-top: 35px;
+}
+
+p.messageName {
+  margin-top: 40px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.messageContainer p:nth-of-type(2) {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+p.messageName span {
+  font-weight: bold;
+  font-size: 28px;
+  padding-left: 25px;
+}
+/* ------- 会社概要ここまで ------ */
+
+/* 不動産事業 */
+#serviceHero {
+  width: 100%;
+  /* max-width: 100%; */
+  height: 400px;
+  position: relative;
+}
+
+#serviceHero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#serviceHero img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+#serviceHero .hero-txt {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  /* height: 100%; */
+  transform: translate(-50%, -50%);
+}
+
+#serviceHero .hero-txt h3 {
+  font-size: 28px;
+  /* text-shadow: px 10px 10px #000; */
+  padding-bottom: 20px;
+}
+
+#serviceHero .serviceBox {
+  color: #fff;
+  background: #1f2f54;
+  width: 500px;
+  text-align: center;
+  height: 140px;
+  position: absolute;
+  bottom: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(66, 65, 65, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#serviceHero .serviceBox p {
+  font-size: 22px;
+}
+
+#serviceHero .serviceBox p:last-of-type {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+#strength.subStrength {
+  width: 70%;
+  /* background-color: lightblue; */
+  text-align: center;
+  margin: 120px auto 80px;
+}
+
+#serviceDetail .detail {
+  width: 1000px;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+#serviceDetail .detail img {
+  width: 470px;
+}
+
+#serviceDetail .detail .detailContent {
+  width: 470px;
+}
+
+#serviceDetail .detail .detailContent h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1f2f54;
+}
+
+#serviceDetail .detail .detailContent .detailBorder {
+  width: 120px;
+  height: 5px;
+  background-color: #1f2f54;
+  display: block;
+  margin-top: 10px;
+}
+
+#serviceDetail .detail .detailContent p {
+  padding-top: 30px;
+}
+/* 不動産事業 */
+
+/* -------- プライバシーポリシーここから -------- */
+.privacyPolicy {
+  padding-bottom: 100px;
+}
+
+.privacyContainer {
+  width: 850px;
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.privacyContainer h3.privacyHl {
+  font-size: 24px;
+  color: #1f2f54;
+  margin-bottom: 15px;
+}
+
+.privacyContainer .privacyBox {
+  margin-top: 45px;
+}
+
+.privacyContainer .privacyRow {
+  text-indent: -15px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.privacyContainer .privacyRow li {
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.privacyContainer .privacyRow .privacyRowSecond {
+  text-indent: -14px;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.privacyContainer .privacyRow .privacyThird {
+  text-indent: -14px;
+  margin-left: 40px;
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
+}
+/* -------- プライバシーポリシーここまで -------- */
+
+/* -------- tablet responsive ---------- */
+@media screen and (max-width: 1280px) {
+  .forPc {
+    display: none;
+  }
+
+  .forSp {
+    display: block;
+  }
+
+  header #navBtn {
+    display: block;
+  }
+
+  header {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.5% 4%;
+    align-items: center;
+  }
+
+  header ul {
+    position: fixed;
+    top: 0;
+    right: -120%;
+    width: 50%;
+    background: #fff;
+    box-shadow: 0px 0px 15px -5px #777777;
+    height: 100vh;
+    z-index: 1;
+    display: block;
+    padding: 150px 5%;
+    transition: all 0.3s;
+  }
+
+  header ul.active {
+    right: 0;
+  }
+
+  header ul .dropdown,
+  header ul li a,
+  header ul li {
+    display: block;
+    font-size: 24px;
+  }
+
+  header ul li,
+  header ul li a {
+    margin-bottom: 5%;
+  }
+
+  header ul .dropdown {
+    margin-top: 5%;
+    text-indent: 3%;
+  }
+
+  header .fa-bars {
+    font-size: 5vw;
+    z-index: 10;
+  }
+
+  header ul li:nth-of-type(2):hover .dropdown,
+  header ul li:nth-of-type(2):hover {
+    pointer-events: none;
+  }
+
+  header ul li:nth-of-type(2):hover .dropdown {
+    width: 100%;
+  }
+
+  #hero {
+    height: 63vw;
+  }
+
+  #hero {
+    width: 100%;
+    /* max-width: 100%; */
+    height: 100%;
+    position: relative;
+  }
+
+  #hero img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+  }
+
+  #hero .hero-txt {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+
+  #hero .hero-txt h3 {
+    font-size: 55px;
+    text-shadow: 10px 10px 10px #000;
+    padding-bottom: 20px;
+  }
+
+  #hero .hero-txt button {
+    width: 250px;
+    height: 40px;
+    margin-top: 30px;
+    transition: all 0.2s;
+  }
+
+  #hero .hero-txt button a {
+    color: #fff;
+    font-size: 20px;
+  }
+
+  #services .service {
+    display: block;
+    width: 100%;
+  }
+
+  #services .service.consulting {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #services .service img,
+  #services .service .service-txt {
+    width: 100%;
+  }
+
+  #services .service img {
+    height: 45vw;
+  }
+
+  #services .service .service-txt {
+    padding: 5% 7%;
+  }
+
+  #blog .blog-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 3%;
+  }
+
+  #blog .card {
+    width: calc(100% / 3.2);
+    border: 1px solid #999;
+  }
+
+  /* ----- 事業内容ページ ----- */
+  #serviceDetail .detail {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  #serviceDetail .detail img,
+  #serviceDetail .detail .detailContent {
+    width: 47%;
+  }
+  /* ----- 事業内容ページ ----- */
+
+  /* -------- プライバシーポリシーここから -------- */
+  .privacyPolicy {
+    padding-bottom: 10%;
+  }
+
+  .privacyContainer {
+    width: 85%;
+    max-width: 85%;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+
+  .privacyContainer h3.privacyHl {
+    font-size: 24px;
+    color: #1f2f54;
+    margin-bottom: 3%;
+  }
+
+  .privacyContainer .privacyBox {
+    margin-top: 7%;
+  }
+
+  .privacyContainer .privacyRow {
+    text-indent: -1rem;
+    margin-left: 2.2rem;
+    margin-top: 3%;
+  }
+
+  .privacyContainer .privacyRow li {
+    line-height: 1.8;
+    margin-bottom: 10px;
+  }
+
+  .privacyContainer .privacyRow .privacyRowSecond {
+    text-indent: -1rem;
+    /* background-color: orange; */
+    margin-left: 2.2rem;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .privacyContainer .privacyRow .privacyThird {
+    text-indent: -1rem;
+    margin-left: 2.2rem;
+    margin-top: 3%;
+    /* margin-bottom: 20px; */
+  }
+  /* -------- プライバシーポリシーここまで -------- */
+  .footerContainer {
+    width: 85%;
+    max-width: 85%;
+  }
+}
+
+/* -------- smartphone responsive ---------- */
+@media screen and (max-width: 768px) {
+  header ul {
+    position: fixed;
+    top: 0;
+    right: -120%;
+    width: 80%;
+    background: #fff;
+    box-shadow: 0px 0px 15px -5px #777777;
+    height: 100vh;
+    z-index: 1;
+    display: block;
+    padding: 150px 5%;
+    transition: all 0.3s;
+  }
+  #hero .hero-txt h3 {
+    font-size: 8.2vw;
+  }
+
+  #hero .hero-txt p {
+    font-size: 3.44vw;
+  }
+
+  #hero .hero-txt button {
+    width: 49vw;
+    height: 10vw;
+    margin-top: 7%;
+  }
+
+  #hero .hero-txt button a {
+    font-size: 4vw;
+  }
+
+  #blog .blog-container {
+    display: block;
+  }
+
+  #blog .card {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  #services .service .service-txt p:first-of-type {
+    font-size: 3.44vw;
+  }
+
+  #services .service .service-txt h3 {
+    font-size: 6.3vw;
+  }
+
+  #strength {
+    width: 94%;
+    max-width: 94%;
+    margin: 7% auto 12%;
+  }
+
+  #services .service .service-txt {
+    padding: 7% 3%;
+  }
+
+  #services .service .service-txt button {
+    width: 50vw;
+    height: 10vw;
+    font-size: 3.6vw;
+    margin: 5% 0 0 auto;
+  }
+
+  /* ----- 事業内容ページ ----- */
+  #serviceHero {
+    height: 65vw;
+  }
+
+  #serviceHero img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #serviceHero .hero-txt {
+    width: 94%;
+  }
+
+  #serviceHero .hero-txt h3 {
+    /* font-size: 3.65vw; */
+    font-size: 3.2vw;
+    line-height: 1.7;
+  }
+
+  #serviceHero .serviceBox {
+    width: 75%;
+    height: 21.5vw;
+  }
+
+  #serviceHero .serviceBox p {
+    font-size: 3.44vw;
+  }
+
+  #serviceHero .serviceBox p:last-of-type {
+    font-size: 7.2vw;
+  }
+
+  #strength.subStrength {
+    width: 94%;
+  }
+
+  #strength.subStrength h3 {
+    font-size: 5.5vw;
+  }
+
+  #serviceDetail .detail {
+    width: 94%;
+    max-width: 94%;
+    display: block;
+  }
+
+  #serviceDetail .detail .detailContent h3 {
+    font-size: 6vw;
+  }
+
+  #serviceDetail .detail img,
+  #serviceDetail .detail .detailContent {
+    width: 100%;
+  }
+
+  #serviceDetail .detail .detailContent {
+    margin-top: 5%;
+  }
+
+  #serviceHero .serviceBox p:last-of-type {
+    font-size: 6vw;
+  }
+  /* ----- 事業内容ページ ----- */
+  #contactBottom {
+    height: 60vw;
+  }
+
+  #contactBottom .contact-txt {
+    width: 94%;
+  }
+
+  #contactBottom .contact-txt h3 {
+    font-size: 6vw;
+  }
+
+  #contactBottom .contact-txt p:last-of-type {
+    font-size: 3.44vw;
+  }
+
+  #contactBottom .contact-txt button {
+    width: 80%;
+    height: 10vw;
+  }
+
+  #contactBottom .contact-txt a {
+    color: #000;
+    letter-spacing: 0.4em;
+    width: 100%;
+    display: block;
+    height: 100%;
+    line-height: 10vw;
+  }
+
+  /* ------ Footer ------ */
+  .footerContainer {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5% 0;
+  }
+
+  .footerContainer .item:first-of-type {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+
+  .footerContainer .item {
+    width: 100%;
+  }
+
+  .footer-txt {
+    margin-bottom: 5%;
+    font-size: 2.5vw;
+  }
+
+  .footerContainer .item:first-of-type p {
+    font-size: 3.44vw;
+    margin-bottom: 3%;
+  }
+
+  .footerContainer .item li {
+    margin-bottom: 3%;
+  }
+
+  .footerContainer .item li,
+  .footerContainer .item li a {
+    font-size: 3.44vw;
+  }
+
+  .footerContainer .item:nth-of-type(2) li a {
+    text-indent: 3%;
+    display: block;
+  }
+  /* ------ Footer ------ */
+
+  /* -------- プライバシーポリシーここから -------- */
+  .privacyPolicy {
+    padding-bottom: 10%;
+  }
+
+  .privacyContainer {
+    width: 94%;
+    max-width: 94%;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+
+  .privacyContainer h3.privacyHl {
+    font-size: 24px;
+    color: #1f2f54;
+    margin-bottom: 3%;
+  }
+
+  .privacyContainer .privacyBox {
+    margin-top: 7%;
+  }
+
+  .privacyContainer .privacyRow {
+    text-indent: -1rem;
+    margin-left: 2.2rem;
+    margin-top: 3%;
+  }
+
+  .privacyContainer .privacyRow li {
+    line-height: 1.8;
+    margin-bottom: 10px;
+  }
+
+  .privacyContainer .privacyRow .privacyRowSecond {
+    text-indent: -1rem;
+    /* background-color: orange; */
+    margin-left: 2.2rem;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .privacyContainer .privacyRow .privacyThird {
+    text-indent: -1rem;
+    margin-left: 2.2rem;
+    margin-top: 3%;
+    /* margin-bottom: 20px; */
+  }
+}
