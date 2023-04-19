@@ -271,6 +271,29 @@ header #navBtn {
   width: 100%;
 }
 
+/* 取引先情報 */
+#developer {
+  padding: 55px 0 85px;
+}
+
+#developer .developer-head {
+  text-align: center;
+}
+
+#developer .developerContainer {
+  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+
+#developer .developerContainer img {
+  width: 200px;
+}
+/* 取引先情報 */
+
 #contactBottom {
   width: 100%;
   max-width: 100%;
@@ -784,6 +807,29 @@ p.messageName span {
     width: calc(100% / 3.2);
     border: 1px solid #999;
   }
+
+  /* 取引先情報 */
+  #developer {
+    padding: 6% 0 10%;
+  }
+
+  #developer .developer-head {
+    text-align: center;
+  }
+
+  #developer .developerContainer {
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3.5%;
+  }
+
+  #developer .developerContainer img {
+    width: 16%;
+  }
+  /* 取引先情報 */
 
   /* ----- 事業内容ページ ----- */
   #serviceDetail .detail {
