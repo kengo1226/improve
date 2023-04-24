@@ -435,6 +435,16 @@ footer {
   font-weight: bold;
   font-size: 27px;
 }
+
+#grade .gradeExplain {
+  width: 900px;
+  max-width: 900px;
+  margin: 0 auto 50px;
+}
+
+#grade .gradeExplain img {
+  width: 100%;
+}
 /* ダイヤモンド４Cここまで */
 
 /* ------- 会社概要ここから ------ */
@@ -938,6 +948,12 @@ p.messageName span {
     font-weight: bold;
     font-size: 27px;
   }
+
+  #grade .gradeExplain {
+    width: 90%;
+    max-width: 80%;
+    margin: 0 auto 6%;
+  }
   /* ------ ダイヤモンド４C ------ */
 
   /* ----- 会社概要ページここから ----- */
@@ -1353,7 +1369,7 @@ p.messageName span {
 
   #grade h3.head-main {
     text-align: center;
-    margin-bottom: 8%;
+    margin-bottom: 4% !important;
   }
 
   #grade .aboutGrade {
@@ -1365,7 +1381,7 @@ p.messageName span {
 
   #grade .aboutGrade .gradeBox {
     width: 100%;
-    margin-bottom: 7.5%;
+    margin-bottom: 9.5%;
   }
 
   #grade .aboutGrade .gradeBox h3 {
@@ -1380,6 +1396,12 @@ p.messageName span {
     display: block;
     font-weight: bold;
     font-size: 4.8vw;
+  }
+
+  #grade .gradeExplain {
+    width: 94%;
+    max-width: 94%;
+    margin: 0 auto 6%;
   }
   /* ------ ダイヤモンド４C ------ */
 
