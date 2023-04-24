@@ -9,13 +9,14 @@ body {
   /* font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
     "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
     "ＭＳ 明朝", serif; */
-  font-family: serif;
+  /* font-family: serif; */
+  font-family: "Noto Serif JP", serif;
   color: #333;
 }
 
 a {
   text-decoration: none;
-  font-family: serif;
+  font-family: "Noto Serif JP", serif;
 }
 
 ul,
@@ -32,7 +33,7 @@ button {
 .head-main {
   font-size: 35px;
   color: #1f2f54;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .head-sub {
@@ -153,6 +154,7 @@ header #navBtn {
   font-size: 55px;
   text-shadow: 10px 10px 10px #000;
   padding-bottom: 20px;
+  font-weight: 700;
 }
 
 #hero .hero-txt button {
@@ -832,6 +834,7 @@ p.messageName span {
   #services .service {
     display: block;
     width: 100%;
+    margin-bottom: 5%;
   }
 
   #services .service.consulting {
@@ -937,6 +940,18 @@ p.messageName span {
   }
   /* ------ ダイヤモンド４C ------ */
 
+  /* ----- 会社概要ページここから ----- */
+  .companyDetail {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  #message {
+    width: 90%;
+    max-width: 90%;
+  }
+  /* ----- 会社概要ページここまで ----- */
+
   /* -------- プライバシーポリシーここから -------- */
   .privacyPolicy {
     padding-bottom: 10%;
@@ -993,22 +1008,46 @@ p.messageName span {
 
 /* -------- smartphone responsive ---------- */
 @media screen and (max-width: 768px) {
+  header .fa-bars {
+    font-size: 7vw;
+  }
+
   header ul {
     position: fixed;
     top: 0;
     right: -120%;
     width: 80%;
-    background: #fff;
+    background: #1f2f54;
     box-shadow: 0px 0px 15px -5px #777777;
     height: 100vh;
     z-index: 1;
     display: block;
-    padding: 150px 5%;
+    padding: 150px 8%;
     transition: all 0.3s;
   }
 
+  header #navBtn.active {
+    color: #fff;
+  }
+
+  header ul li,
+  header ul li a {
+    margin-bottom: 9%;
+    font-size: 3.8vw;
+    color: #fff;
+  }
+
+  header ul .dropdown {
+    margin-top: 8%;
+  }
+
   h3.head-main {
-    font-size: 6.3vw;
+    font-size: 6.3vw !important;
+    padding-bottom: 3% !important;
+  }
+
+  .head-sub {
+    font-size: 4vw !important;
   }
 
   #hero .hero-txt h3 {
@@ -1108,6 +1147,11 @@ p.messageName span {
     width: 94%;
     max-width: 94%;
     display: block;
+    margin-bottom: 12%;
+  }
+
+  #serviceDetail .detail:last-of-type {
+    margin-bottom: 4%;
   }
 
   #serviceDetail .detail .detailContent h3 {
@@ -1156,6 +1200,61 @@ p.messageName span {
     height: 100%;
     line-height: 10vw;
   }
+
+  /* ----- 会社概要ページここから ----- */
+  .companyDetail {
+    width: 94%;
+    max-width: 94%;
+    margin-bottom: 13%;
+  }
+
+  #message {
+    width: 94%;
+    max-width: 94%;
+    padding: 10% 0;
+  }
+
+  #strength.aboutStrength {
+    margin-bottom: 3%;
+  }
+
+  .companyDetail .row {
+    padding: 2% 3%;
+  }
+
+  .companyDetail .row .detailHl {
+    width: 35%;
+    font-size: 3.44vw;
+  }
+
+  .companyDetail .row .detailInfo {
+    width: 63%;
+    font-size: 3.44vw;
+  }
+
+  .messageContainer {
+    margin-top: 5%;
+  }
+
+  .messageContainer p {
+    font-size: 3.44vw;
+  }
+
+  .messageContainer p:nth-of-type(2) {
+    font-size: 3.8vw;
+    padding-top: 5.5%;
+  }
+
+  p.messageName {
+    margin-top: 7%;
+    font-weight: 700;
+  }
+
+  p.messageName span {
+    padding-left: 5%;
+    font-size: 6.3vw;
+  }
+  /* ----- 会社概要ページここまで ----- */
 
   /* ------ Footer ------ */
   .footerContainer {

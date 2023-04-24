@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IMPROVE LIFE公式サイト</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -21,7 +27,7 @@
           <img src="./image/improve-life_logo.png" alt="" />
         </a>
       </h1>
-      <ul>
+      <ul id="navMenu">
         <li><a href="about.html">会社概要</a></li>
         <li>
           事業内容
@@ -34,7 +40,7 @@
         <li><a href="">ブログ</a></li>
         <li><a href="">お問い合わせ</a></li>
       </ul>
-      <i class="fa-solid fa-bars forSp"></i>
+      <i id="navBtn" class="fa-solid fa-bars forSp"></i>
     </header>
 
     <main>
@@ -109,7 +115,19 @@
         </div>
       </section>
 
-      <section id="developer"></section>
+      <section id="developer">
+        <div class="developer-head">
+          <p class="head-sub">Developer</p>
+          <h3 class="head-main">取引先情報</h3>
+        </div>
+        <div class="developerContainer">
+          <img src="./image/image1.jpg" alt="" />
+          <img src="./image/image2.jpg" alt="" />
+          <img src="./image/image3.jpg" alt="" />
+          <img src="./image/image4.jpg" alt="" />
+          <img src="./image/image5.jpg" alt="" />
+        </div>
+      </section>
 
       <section id="contactBottom">
         <img src="./image/contact-img.jpg" alt="" />
@@ -147,5 +165,7 @@
       </div>
       <p class="footer-txt">Copyright Allright Reserved.</p>
     </footer>
+
+    <script src="./main.js"></script>
   </body>
 </html>
